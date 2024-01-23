@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    
+    <p> Hola soy una etiqueta p</p>
+    <p> Hola soy una etiqueta p</p>
+    <p> Hola soy una etiqueta p</p>
+
+    <div id="#mensaje"> Hola soy una etiqueta div</div>
+    <div class="alerta"> Hola soy una etiqueta div</div>
+    <div class="alerta"> Hola soy una etiqueta div</div>
+
+    <script>
+        $(function(){
+
+            //Selector mediante la etiqueta (nombre de la etiqueta)
+            $("p").html("¡Hola Mundo!")
+
+            //Selector mediante la ID (id="mensaje")
+            $("#mensaje").html("¡Hola Div!")
+
+            //Selector mediante clases (nombre de la etiqueta)
+            $(".alerta").html("¡Hola Clase!")
+
+        });
+    </script>
+
+</body>
+</html>
