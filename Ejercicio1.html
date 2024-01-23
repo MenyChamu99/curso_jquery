@@ -16,6 +16,8 @@
     <div class="alerta"> Hola soy una etiqueta div</div>
     <div class="alerta"> Hola soy una etiqueta div</div>
 
+    <input name="man-news">
+
     <script>
         $(function(){
 
@@ -30,6 +32,9 @@
             
             // selector de todos los elementos que hay en el documento
             $("*").css("color", "red");
+
+            //Selector mediante nombre del elemento
+            $("input[name*='man']").val("has man in it!")
         });
     </script>
 
