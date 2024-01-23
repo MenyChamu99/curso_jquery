@@ -21,6 +21,8 @@
     <h3>Mouseenter</h3>
     <div id="documento"> Pasar mouse para desencadenar el evento mouseenter </div>
     <p id="documento"> </p>
+    <img id="perro" src="img\perro.jpg" alt="perro">
+    <p id="perrito"> </p>
     <hr>
 
     
@@ -44,6 +46,9 @@
             //MOUSEENTER
             $("div#documento").mouseenter(function(){
                 $("p#documento").html("Hola soy el mousenter")
+            });
+            $("img#perro").mouseenter(function(){
+                $("p#perrito").html("Hola soy un lindo perrito")
             });
         });
 
