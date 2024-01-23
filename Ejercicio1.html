@@ -9,7 +9,7 @@
 <body>
     
     <p> Hola soy una etiqueta p</p>
-    <p> Hola soy una etiqueta p</p>
+    <p class="parrafo"> Hola soy una etiqueta p</p>
     <p> Hola soy una etiqueta p</p>
 
     <div id="#mensaje"> Hola soy una etiqueta div</div>
@@ -35,6 +35,9 @@
 
             //Selector mediante nombre del elemento
             $("input[name*='man']").val("has man in it!")
+
+            // Selector de un elemento que esta como p y tiene una clase
+            $("p.parrafo").html("Hola Manuel")
         });
     </script>
 
