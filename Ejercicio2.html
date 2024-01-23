@@ -32,23 +32,36 @@
             // EVENTO CLICK
             // Esto es el evento, en este caso cuando el usuario haga clic en el parrafo <p> entonces cambiara el texto
             $("p.click").click(function(){
-                $("p.click").html("Hola soy el resultado del evento")
+                $("p.click").html("Hola soy el resultado del evento");
             });
             $("p.click2").click(function(){
-                $("p#click2").html("Hola soy el resultado del evento 2")
+                $("p#click2").html("Hola soy el resultado del evento 2");
             });
 
             // DOBLE CLICK
             $("p#dbclick").dblclick(function(){
-                $("p#mensaje").html("Hola soy el resultado de doble click")
+                $("p#mensaje").html("Hola soy el resultado de doble click");
             });
 
             //MOUSEENTER
             $("div#documento").mouseenter(function(){
-                $("p#documento").html("Hola soy el mousenter")
+                $("p#documento").html("Hola soy el mousenter");
+                $("p#documento").css("color", "blue");
             });
             $("img#perro").mouseenter(function(){
-                $("p#perrito").html("Hola soy un lindo perrito")
+                $("p#perrito").html("Hola soy un lindo perrito");
+                $("p#perrito").css("color", "black");
+            });
+
+        
+            //MOUSE LEAVE
+            $("div#documento").mouseleave(function(){
+                $("p#documento").html("Hola soy el mouseleave");
+                $("p#documento").css("color", "red");
+            });
+            $("img#perro").mouseleave(function(){
+                $("p#perrito").html("Adios humano");
+                $("p#perrito").css("color", "blue");
             });
         });
 
