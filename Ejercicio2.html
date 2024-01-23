@@ -12,11 +12,15 @@
     <p class="hello"> Hola soy una p</p>
 
     <p class="press"> Presiona este texto</p>
+    <P id="dbclick">Presiona 2 veces</P>
+    <hr>
     <p id="mensaje"> </p>
+
     
     <script>
         // iniciar los scripts de JQuery una vez listo el html
         $(function(){
+            // EVENTO CLICK
             // Esto es el evento, en este caso cuando el usuario haga clic en el parrafo <p> entonces cambiara el texto
             $("p.hello").click(function(){
                 $("p.hello").html("Hola soy el resultado del evento")
@@ -24,7 +28,9 @@
             $("p.press").click(function(){
                 $("p#mensaje").html("Hola soy el resultado del evento 2")
             });
-
+            $("p#dbclick").dblclick(function(){
+                $("p#mensaje").html("Hola soy el resultado de doble click")
+            });
         });
 
     </script>
