@@ -24,6 +24,9 @@
     <img id="perro" src="img\perro.jpg" alt="perro">
     <p id="perrito"> </p>
     <hr>
+    <h3>HOVER</h3>
+    <div id="documentohover"> Demostración Hover</div>
+    <p id="hover"></p>
 
     
     <script>
@@ -63,6 +66,15 @@
                 $("p#perrito").html("Adios humano");
                 $("p#perrito").css("color", "blue");
             });
+
+            // HOVER
+            $("#documentohover").hover(function(){
+                $("p#hover").html("Hola soy hover");
+                $("p#hover").css("color", "red");
+            },function(){
+                $("p#hover").html("Adios");
+                $("p#hover").css("color", "black");
+            })
         });
 
     </script>
