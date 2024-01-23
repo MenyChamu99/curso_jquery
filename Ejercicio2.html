@@ -7,14 +7,21 @@
     <script src="jquery.js"></script>
 </head>
 <body>
-    
-
-    <p class="hello"> Hola soy una p</p>
-
-    <p class="press"> Presiona este texto</p>
-    <P id="dbclick">Presiona 2 veces</P>
+    <h1>EVENTOS</h1>
     <hr>
+    <h3>Click</h3>
+    <p class="click"> Hola soy una p</p>
+    <p class="click2"> Presiona este texto</p>
+    <p id="click2"> </p>
+    <hr>
+    <h3>Doble click</h3>
+    <P id="dbclick">Presiona 2 veces</P>
     <p id="mensaje"> </p>
+    <hr>
+    <h3>Mouseenter</h3>
+    <div id="documento"> Pasar mouse para desencadenar el evento mouseenter </div>
+    <p id="documento"> </p>
+    <hr>
 
     
     <script>
@@ -22,14 +29,21 @@
         $(function(){
             // EVENTO CLICK
             // Esto es el evento, en este caso cuando el usuario haga clic en el parrafo <p> entonces cambiara el texto
-            $("p.hello").click(function(){
-                $("p.hello").html("Hola soy el resultado del evento")
+            $("p.click").click(function(){
+                $("p.click").html("Hola soy el resultado del evento")
             });
-            $("p.press").click(function(){
-                $("p#mensaje").html("Hola soy el resultado del evento 2")
+            $("p.click2").click(function(){
+                $("p#click2").html("Hola soy el resultado del evento 2")
             });
+
+            // DOBLE CLICK
             $("p#dbclick").dblclick(function(){
                 $("p#mensaje").html("Hola soy el resultado de doble click")
+            });
+
+            //MOUSEENTER
+            $("div#documento").mouseenter(function(){
+                $("p#documento").html("Hola soy el mousenter")
             });
         });
 
