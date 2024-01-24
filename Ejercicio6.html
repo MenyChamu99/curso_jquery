@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    
+    <input id="btnmensaje" type="button" value="Presionar para desencadenar">
+    <div id="mensaje">Hola soy la etiqueta que maneja desenadenadores</div>
+
+    <script>
+        $(function(){
+            $("#btnmensaje").click(function(){
+                $("#mensaje").css("color", "green").slideUp().slideDown()
+            });
+        });
+    </script>
+</body>
+</html>
