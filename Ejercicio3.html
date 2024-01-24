@@ -7,9 +7,10 @@
     <script src="jquery.js"></script>
 </head>
 <body>
-    
+    <h3> EFECTOS</h3>
     <input type="button" id="btnEfecto1" value="Efecto 1 (hide)">
     <input type="button" id="btnEfecto2" value="Efecto 2 (show)">
+    <input type="button" id="btnEfecto3" value="Efecto 3 (toggle)">
     <div id="lbmensaje">Mensaje...</div>
 
     <script>
@@ -22,6 +23,9 @@
             });
             $("#btnEfecto2").click(function(){
                 $("#lbmensaje").show();
+            });
+            $("#btnEfecto3").click(function(){
+                $("#lbmensaje").toggle(5000);
             });
         });
         
