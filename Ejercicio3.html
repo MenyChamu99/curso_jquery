@@ -11,6 +11,10 @@
     <input type="button" id="btnEfecto1" value="Efecto 1 (hide)">
     <input type="button" id="btnEfecto2" value="Efecto 2 (show)">
     <input type="button" id="btnEfecto3" value="Efecto 3 (toggle)">
+    <input type="button" id="btnEfecto4" value="Efecto 4 (fadeIn)">
+    <input type="button" id="btnEfecto5" value="Efecto 5 (fadeOut)">
+    <input type="button" id="btnEfecto6" value="Efecto 6 (fadeToggle)">
+    <input type="button" id="btnEfecto7" value="Efecto 7 (fadeTo)">
     <div id="lbmensaje">Mensaje...</div>
 
     <script>
@@ -24,8 +28,25 @@
             $("#btnEfecto2").click(function(){
                 $("#lbmensaje").show();
             });
+            // efecto toggle 
             $("#btnEfecto3").click(function(){
                 $("#lbmensaje").toggle(5000);
+            });
+            // efecto fadeIn y fadeOut 
+            $("#btnEfecto4").click(function(){
+                $("#lbmensaje").fadeIn(1000);
+            });
+            $("#btnEfecto5").click(function(){
+                $("#lbmensaje").fadeOut(1000);
+            });
+            $("#btnEfecto6").click(function(){
+                $("#lbmensaje").fadeToggle(1000);
+            });
+            $("#btnEfecto7").click(function(){
+                $("#lbmensaje").fadeTo(300, 0.16);
+                $("#lbmensaje").fadeTo(1000, 0.5);
+                $("#lbmensaje").fadeTo(2000, 0.7);
+                $("#lbmensaje").fadeTo("slow", 1);
             });
         });
         
