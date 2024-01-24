@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    
+    <style>
+        .cuadrado{
+            background: red;
+            height: 120px;
+            width: 120px;
+            position: absolute;
+        }
+    </style>
+
+    <input id="btnanimation" type="button" value="Efecto Animacion">
+
+    <div class="cuadrado">
+
+    </div>
+
+    <script>
+
+        $(function(){
+            $("#btnanimation").click(function(){
+                $(".cuadrado").animate({
+                    height: '400px',
+                    opacity: '0.4'
+                }, "slow");
+                $(".cuadrado").animate({
+                    height: '300px',
+                    opacity: '0.8'
+                }, "slow");
+                $(".cuadrado").animate({
+                    width: '300px',
+                    opacity: '0.8'
+                }, "slow");
+                $(".cuadrado").animate({
+                    height: '40px',
+                    opacity: '0.4'
+                }, "slow");
+                $(".cuadrado").animate({
+                    height: '120px',
+                    opacity: '1'
+                }, "slow");
+                $(".cuadrado").animate({
+                    width: '120px',
+                    opacity: '1'
+                }, "slow");
+            });
+        });
+
+    </script>
+
+</body>
+</html>
