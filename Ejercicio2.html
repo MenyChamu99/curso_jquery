@@ -30,6 +30,10 @@
     <hr>
     Nombre: <input type="text" name="nombre" id="nombre">
     Correo: <input type="text" name="correo" id="correo">
+    <hr>
+    <h3>ON</h3>
+    <div id="contenidodeldeventoon">Contenido para ver el evento on</div>
+    <div id="eventomultiple">Contenido para ver el evento multiple</div>
 
     
     <script>
@@ -88,6 +92,24 @@
                 $(this).css("background-color", "red");
              });
 
+             // evento on
+             // aplicando el evento click
+             $("#contenidodeldeventoon").on("click", function(){
+                $(this).css("background-color", "red")
+             });
+
+             // Evento multiple con On
+             $("#eventomultiple").on({
+                click: function(){
+                     $(this).css("background-color", "green")
+                },
+                mouseenter: function(){
+                    $(this).css("background-color", "yellow")
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "red")
+                }
+             });
         });
 
     </script>
