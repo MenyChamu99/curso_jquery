@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+    <style>
+        #btnslidedown, #btnslideup, #btnslidetoggle, #contenido, #contenido2{
+            text-align: center;
+            background-color: aqua;
+            border: solid 1px red;
+        }
+        #contenido{
+            padding: 50px;
+        }
+    </style>
+
+    <div id="btnslidetoggle">Expandir/Contraer</div>
+    <div id="btnslidedown">Expandir</div>
+    <div id="btnslideup">Contraer</div>
+    <div id="contenido">Mensaje</div>
+    <div id="contenido2">Mensaje 2</div>
+
+    <script>
+        // Efectos SlideToggle
+        $(function(){
+            $("#btnslideup").click(function(){
+                $("#contenido").slideUp("slow");
+            });
+            $("#btnslidedown").click(function(){
+                $("#contenido").slideDown("slow");
+            });
+            $("#btnslidetoggle").click(function(){
+                $("#contenido").slideToggle("slow");
+            });
+        });
+
+    </script>
+
+</body>
+</html>
