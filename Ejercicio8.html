@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+    <div id="texto"> ¡Hola soy un Div! <br/><br/> </div>
+
+    <img id="imgPerro" src="/img/perro.jpg" alt="perro">
+    <br>
+    <input type="text" value="Meny" name="" id="txtContenido">
+
+    <br>
+    <input id="btnText" type="button" value="Obtener text (get)">
+    <input id="btnHTML" type="button" value="Obtener html (get)">
+    <input id="btnVal" type="button" value="Obtener Val (get)">
+    <input id="btnAttr" type="button" value="Obtener Attr (get)">
+
+    <hr>
+    <h3>Resultados obtenidos (aplicando el set)</h3>
+    <div id="resultado"></div>
+    <br>
+    <input type="text" name="" id="">
+    <br>
+    <input id="btnTextSet" type="button" value="Asignar text (set)">
+    <input id="btnHTMLSet" type="button" value="Asignar html (set)">
+    <input id="btnValSet" type="button" value="Asignar Val (set)">
+    <input id="btnAttrSet" type="button" value="Asignar Attr (set)">
+    
+    <script>
+
+        $(function(){
+            // Recoleccion de datos
+            $("#btnText").click(function(){
+                a = $("#texto").text();
+                alert(a);
+            });
+            $("#btnHTML").click(function(){
+                b = $("#texto").html();
+                alert(b);
+            });
+            $("#btnVal").click(function(){
+                c = $("#txtContenido").val();
+                alert(c);
+            });
+            $("#btnAttr").click(function(){
+                d = $("#imgPerro").attr("src");
+                alert(d);
+            });
+
+
+            // Asignaciones
+            $("#btnTextSet").click(function(){
+                a = $("#texto").text();
+                $("#resultado").text(a);
+            });
+        });
+
+    </script>
+
+</body>
+</html>
