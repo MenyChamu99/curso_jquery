@@ -9,14 +9,18 @@
 <body>
 
     <div id="texto"> ¡Hola soy un Div! <br/><br/> </div>
-    
+
+    <img id="imgPerro" src="/img/perro.jpg" alt="perro">
+    <br>
     <input type="text" value="Meny" name="" id="txtContenido">
+    
 
     <div id="resultado"></div>
     <br>
     <input id="btnText" type="button" value="Obtener text (get)">
     <input id="btnHTML" type="button" value="Obtener html (get)">
     <input id="btnVal" type="button" value="Obtener Val (get)">
+    <input id="btnAttr" type="button" value="Obtener Attr (get)">
     
     <script>
 
@@ -32,6 +36,10 @@
             $("#btnVal").click(function(){
                 c = $("#txtContenido").val();
                 alert(c);
+            });
+            $("#btnAttr").click(function(){
+                d = $("#imgPerro").attr("src");
+                alert(d);
             });
         });
 
