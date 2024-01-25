@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div id="texto"> ¡Hola soy un Div! <br/><br/> </div>
+    <div id="texto"> ¡Hola soy un Div! <br/><br/><hr> </div>
 
     <img id="imgPerro" src="/img/perro.jpg" alt="perro">
     <br>
@@ -25,6 +25,7 @@
     <div id="resultado"></div>
     <br>
     <input type="text" name="" id="">
+    <br>
     <br>
     <input id="btnTextSet" type="button" value="Asignar text (set)">
     <input id="btnHTMLSet" type="button" value="Asignar html (set)">
@@ -57,6 +58,10 @@
             $("#btnTextSet").click(function(){
                 a = $("#texto").text();
                 $("#resultado").text(a);
+            });
+            $("#btnHTMLSet").click(function(){
+                b = $("#texto").html();
+                $("#resultado").html(b);
             });
         });
 
