@@ -9,11 +9,14 @@
 <body>
 
     <div id="texto"> ¡Hola soy un Div! <br/><br/> </div>
+    
+    <input type="text" value="Meny" name="" id="txtContenido">
 
     <div id="resultado"></div>
     <br>
     <input id="btnText" type="button" value="Obtener text (get)">
     <input id="btnHTML" type="button" value="Obtener html (get)">
+    <input id="btnVal" type="button" value="Obtener Val (get)">
     
     <script>
 
@@ -25,6 +28,10 @@
             $("#btnHTML").click(function(){
                 b = $("#texto").html();
                 alert(b);
+            });
+            $("#btnVal").click(function(){
+                c = $("#txtContenido").val();
+                alert(c);
             });
         });
 
