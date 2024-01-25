@@ -24,7 +24,7 @@
     <h3>Resultados obtenidos (aplicando el set)</h3>
     <div id="resultado"></div>
     <br>
-    <input type="text" name="" id="">
+    <input type="text" name="" id="txtResultado">
     <br>
     <br>
     <input id="btnTextSet" type="button" value="Asignar text (set)">
@@ -62,6 +62,10 @@
             $("#btnHTMLSet").click(function(){
                 b = $("#texto").html();
                 $("#resultado").html(b);
+            });
+            $("#btnValSet").click(function(){
+                c = $("#texto").text();
+                $("#txtResultado").val(c);
             });
         });
 
