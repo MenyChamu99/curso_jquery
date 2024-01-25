@@ -24,6 +24,7 @@
     <h3>Resultados obtenidos (aplicando el set)</h3>
     <div id="resultado"></div>
     <br>
+    <img src="" alt="" id="imgResultado">
     <input type="text" name="" id="txtResultado">
     <br>
     <br>
@@ -66,6 +67,10 @@
             $("#btnValSet").click(function(){
                 c = $("#texto").text();
                 $("#txtResultado").val(c);
+            });
+            $("#btnAttrSet").click(function(){
+                src = $("#imgPerro").attr("src");
+                $("#imgResultado").attr("src", src);
             });
         });
 
