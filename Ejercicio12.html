@@ -22,6 +22,7 @@
     <div id="idMensaje" >Hola soy un texto</div>
     <input type="button" value="Agregar Estilos" id="btnCambio">
     <input type="button" value="Quitar Estilos" id="btnQuitar">
+    <input type="button" value="Agregar/Quitar Estilos" id="btnToggle">
 
     <script>
 
@@ -31,6 +32,9 @@
             });
             $("#btnQuitar").click(function(){
                 $("#idMensaje").removeClass("colorAzul");
+            });
+            $("#btnToggle").click(function(){
+                $("#idMensaje").toggleClass("colorAzul");
             });
         });
 
