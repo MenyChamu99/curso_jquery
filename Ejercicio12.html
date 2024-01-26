@@ -13,18 +13,24 @@
         .colorAzul{
             background-color: aqua; 
             height: 90px;
+            font-size: large;
+            color: red;
         }
 
     </style>
     
     <div id="idMensaje" >Hola soy un texto</div>
     <input type="button" value="Agregar Estilos" id="btnCambio">
+    <input type="button" value="Quitar Estilos" id="btnQuitar">
 
     <script>
 
         $(function(){
             $("#btnCambio").click(function(){
                 $("#idMensaje").addClass("colorAzul");
+            });
+            $("#btnQuitar").click(function(){
+                $("#idMensaje").removeClass("colorAzul");
             });
         });
 
