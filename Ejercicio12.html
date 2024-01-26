@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+    <style>
+
+        .colorAzul{
+            background-color: aqua; 
+            height: 90px;
+        }
+
+    </style>
+    
+    <div id="idMensaje" >Hola soy un texto</div>
+    <input type="button" value="Agregar Estilos" id="btnCambio">
+
+    <script>
+
+        $(function(){
+            $("#btnCambio").click(function(){
+                $("#idMensaje").addClass("colorAzul");
+            });
+        });
+
+    </script>
+
+</body>
+</html>
