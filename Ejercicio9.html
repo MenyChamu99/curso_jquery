@@ -8,14 +8,29 @@
 </head>
 <body>
     
+    <h3>Append</h3>
     <p>Hola Mundo</p>
+
     <input type="button" value="Agregar (append)" id="btnappend">
+    <hr>
+    <h3>Preappend</h3>
+    <br>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <br>
+    <input type="button" value="Agregar (prepend)" id="btnprepend">
 
     <script>
 
         $(function(){
             $("#btnappend").click(function(){
                 $("p").append("<hr> Hola");
+            });
+            $("#btnprepend").click(function(){
+                $("ul").prepend("<li>Elemento 0</li>");
             });
         });
 
